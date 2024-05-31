@@ -1,6 +1,8 @@
-# Panzer-RAM-Gauge-VB6
+# Panzer-Virtual Memory-Gauge-VB6
  
-  A FOSS RAM Gauge VB6 WoW64 Widget for Reactos, XP, Win7, 8 and 10/11+.
+This is an interim page before updating all text and images. 
+
+A FOSS Virtual Memory Gauge VB6 WoW64 Widget for Reactos, XP, Win7, 8 and 10/11+.
  
  My current VB6/RC6 PSD program being finished now, fundamentally complete, only awaiting testing on Windows XP and Win7 32bit and some multi monitor checking, completion of the CHM help file and the creation of the setup.exe. This Panzer widget is based upon the Yahoo widget of the same visual design and very similar operation.
 
@@ -9,10 +11,10 @@
 ![vb6-logo-350](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/2f60380d-29f5-4737-8392-e7d747c61f25)
 
  I created as a variation of the previous gauges I had previously created for the World of Tanks and War Thunder 
- communities. The Panzer RAM Gauge widget is an attractive dieselpunk VB6 widget for your desktop. 
+ communities. The Panzer Virtual Memory Gauge widget is an attractive dieselpunk VB6 widget for your desktop. 
  Functional and gorgeous at the same time. The graphics are my own, I took original inspiration from a clock face by Italo Fortana combining it with an aircraft gauge surround. It is all my code with some help from the chaps at VBForums (credits given). 
   
-The Panzer RAM Gauge VB6  is a useful utility displaying the RAM usage of your system in a dieselpunk fashion on your desktop. This Widget is a moveable widget that you can move anywhere around the desktop as you require.
+The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual Memory usage of your system in a dieselpunk fashion on your desktop. This Widget is a moveable widget that you can move anywhere around the desktop as you require.
  
 ![panzer-ramphoto-1440x900](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/325c427a-2149-4f92-aeb9-51b9f937cd4c)
 
@@ -31,7 +33,7 @@ The Panzer RAM Gauge VB6  is a useful utility displaying the RAM usage of your s
  
  ![panzer-ramgauge-help-750](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/4ac57fec-58ed-493d-ba1a-eaab078ef828)
 
- The Panzer RAM Gauge VB6 gauge is Beta-grade software, under development, not yet 
+ The Panzer Virtual Virtual Memory Gauge VB6 gauge is Beta-grade software, under development, not yet 
  ready to use on a production system - use at your own risk.
 
  This version was developed on Windows 7 using 32 bit VisualBasic 6 as a FOSS 
@@ -153,7 +155,7 @@ The Panzer RAM Gauge VB6  is a useful utility displaying the RAM usage of your s
  * CCRSlider.ocx
  
  This OCX will reside in the program folder. The program reference to this OCX is 
- contained within the supplied resource file Panzer RAM Gauge Gauge.RES. It is 
+ contained within the supplied resource file Panzer Virtual Memory Gauge Gauge.RES. It is 
  compiled into the binary.
  
  * OLEGuids.tlb
