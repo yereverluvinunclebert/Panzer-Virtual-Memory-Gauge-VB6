@@ -1,7 +1,5 @@
 # Panzer-Virtual Memory-Gauge-VB6
  
-This is an interim page before updating all text and images. 
-
 A FOSS Virtual Memory Gauge VB6 WoW64 Widget for Reactos, XP, Win7, 8 and 10/11+.
  
  My current VB6/RC6 PSD program being finished now, fundamentally complete, only awaiting testing on Windows XP and Win7 32bit and some multi monitor checking, completion of the CHM help file and the creation of the setup.exe. This Panzer widget is based upon the Yahoo widget of the same visual design and very similar operation.
@@ -16,13 +14,13 @@ A FOSS Virtual Memory Gauge VB6 WoW64 Widget for Reactos, XP, Win7, 8 and 10/11+
   
 The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual Memory usage of your system in a dieselpunk fashion on your desktop. This Widget is a moveable widget that you can move anywhere around the desktop as you require.
  
-![panzer-ramphoto-1440x900](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/325c427a-2149-4f92-aeb9-51b9f937cd4c)
+![white-on-desktop](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/bc13a457-48e9-42f9-b1fb-fd1bc645a634)
 
  This widget can be increased in size, animation speed can be changed, 
  opacity/transparency may be set as to the users discretion. The widget can 
  also be made to hide for a pre-determined period.
- 
-![panzer-ram-icon](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/99ff7e97-d6e4-4696-93cc-e1342560465e)
+
+![panzergauge-help](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/61fe7557-0740-452f-a327-9d5d8fce2e2f)
 
  Right clicking will bring up a menu of options. Double-clicking on the widget will cause a personalised Windows application to 
  fire up. The first time you run it there will be no assigned function and so it 
@@ -48,8 +46,8 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  basis for the conversion of other desktop utilities or widgets. A future step 
  is new VB6 widgets with more functionality and then hopefully, conversion of 
  each to RADBasic/TwinBasic for future-proofing and 64bit-ness. 
- 
-![menu01](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/ee727437-e6e4-4b91-8c0d-90e7e43352b4)
+
+![menu01](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/b5f6ae04-28e3-42a1-baf1-7cfaba528580)
 
  This utility is one of a set of steampunk and dieselpunk widgets. That you can 
  find here on Deviantart: https://www.deviantart.com/yereverluvinuncleber/gallery
@@ -174,8 +172,7 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  
  In the VB6 IDE - project - references - browse - select the OLEGuids.tlb
  
-![prefs-about](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/b2063169-44ad-4fd1-960f-53bed0c030e6)
-
+![prefs-about](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/911e16d9-963f-4cb6-a8d1-5990601bfe93)
 
  * SETUP.EXE - The program is currently distributed using setup2go, a very useful 
  and comprehensive installer program that builds a .exe installer. Youll have to 
