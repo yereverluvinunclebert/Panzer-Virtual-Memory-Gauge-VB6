@@ -206,9 +206,11 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  With regard to the commercial use of incorporated images, permission and a 
  licence would need to be obtained from the original owner and creator, ie. me.
  
-![about](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/00641064-f0ae-435c-ac64-24e6a30290bc)
+![about](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/978894b8-6712-416e-8736-5aa4583c455c)
 
-![Panzer-CPU-Gauge-onDesktop](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/6dc97b14-9954-4f8c-a775-5657b2aeec85)
+![Panzer-Virtual-Memory-Gauge-onDesktop](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/a8359d58-fd9e-4a5e-ac20-fd3ab5b87894)
+
+
 
 
 
