@@ -88,6 +88,8 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
 	Windows 10 Home 64bit on Intel    
 	Windows 10 Home 64bit on AMD    
 	Windows 11 64bit on Intel  
+
+ ![balloon-tooltip](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/e4036245-f2a0-4768-b523-4d40ac0b67cf)
    
  CREDITS:
  
