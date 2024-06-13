@@ -56,7 +56,7 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  enhancements and contributions will be gratefully received if you choose to 
  contribute.
 
-![security](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/2fdc4671-94e3-41ef-8885-997ae81978ce)
+![security](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/feaa9343-d108-4c53-bcf0-4e7099ae37e8)
 
  BUILD: The program runs without any Microsoft plugins.
  
