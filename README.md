@@ -20,7 +20,7 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  opacity/transparency may be set as to the users discretion. The widget can 
  also be made to hide for a pre-determined period.
 
-![panzergauge-help](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/61fe7557-0740-452f-a327-9d5d8fce2e2f)
+![panzer-virtual-memory-displ](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/767b3e79-ed88-48bd-b5e3-75b2b4d2e5a9)
 
  Right clicking will bring up a menu of options. Double-clicking on the widget will cause a personalised Windows application to 
  fire up. The first time you run it there will be no assigned function and so it 
@@ -29,7 +29,7 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
  windows. Mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows XP 
  to Windows 11.
  
- ![panzer-ramgauge-help-750](https://github.com/yereverluvinunclebert/Panzer-RAM-Gauge-VB6/assets/2788342/4ac57fec-58ed-493d-ba1a-eaab078ef828)
+![panzergauge-help](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/61fe7557-0740-452f-a327-9d5d8fce2e2f)
 
  The Panzer Virtual Virtual Memory Gauge VB6 gauge is Beta-grade software, under development, not yet 
  ready to use on a production system - use at your own risk.
