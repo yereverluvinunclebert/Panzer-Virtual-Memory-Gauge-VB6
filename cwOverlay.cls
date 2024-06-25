@@ -753,11 +753,19 @@ End Function
 ' ----------------------------------------------------------------
 Private Function obtainVirtualMemDetails() As String
     Dim result As String: result = vbNullString
+    Dim udtMemStatEx As MEMORYSTATUSEX
     
     On Error GoTo obtainVirtualMemDetails_Error
-
-    result = result & "System Memory: " & Trim$(VirtualMemory_Usage_Total) & sizString & " VirtualMemory total, " & CStr(VirtualMemory_Usage_Percent) & "% utilised." & vbCrLf
-
+    
+    udtMemStatEx.dwLength = Len(udtMemStatEx)
+    Call GlobalMemoryStatusEx(udtMemStatEx)
+    
+    result = result & "Available Physical Memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailPhys.LoPart, udtMemStatEx.ulAvailPhys.HiPart)) & vbCrLf
+    result = result & "Virtual Memory Total : " & Trim$(VirtualMemory_Usage_Total) & sizString & ", " & vbCrLf
+    result = result & "Percentage Usage: " + vbTab + CStr(VirtualMemory_Usage_Percent) & "% utilised." & vbCrLf
+    'result = result & "Available virtual memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailVirtual.LoPart, udtMemStatEx.ulAvailVirtual.HiPart)) & vbCrLf
+    result = result & "Physical Memory Load: " + vbTab + CStr(udtMemStatEx.dwMemoryLoad) + "%" & vbCrLf
+ 
     Debug.Print result
 
     obtainVirtualMemDetails = result
@@ -844,6 +852,49 @@ Public Function NumberInKB(ByVal vNumber As Currency) As Long
     End Select
     
     NumberInKB = retVal
+
+    
+    On Error GoTo 0
+    Exit Function
+
+NumberInKB_Error:
+
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure NumberInKB, line " & Erl & "."
+
+End Function
+
+
+
+
+' ----------------------------------------------------------------
+' Procedure Name: NumberInKB
+' Purpose:
+' Procedure Kind: Function
+' Procedure Access: Public
+' Parameter vNumber (Currency):
+' Return Type: Long
+' Author: https://stackoverflow.com/users/164214/khodor
+' Date: 11/01/2024
+' ----------------------------------------------------------------
+Public Function NumberInKB2(ByVal vNumber As Currency) As String
+    On Error GoTo NumberInKB_Error
+    Dim retVal As String
+    
+    Select Case vNumber
+       Case Is < 1024 ^ 1
+          retVal = CLng(vNumber) & " bytes"
+       Case Is < 1024 ^ 2
+          retVal = CLng(Round(vNumber / 1024, 1)) & " KB"
+       Case Is < 1024 ^ 3
+          retVal = CLng(Round(vNumber / 1024 ^ 2, 2)) & " MB"
+       Case Is < 1024 ^ 4
+          retVal = CLng(Round(vNumber / 1024 ^ 3, 2)) & " GB"
+       Case Is < 1024 ^ 5
+          retVal = CLng(Round(vNumber / 1024 ^ 4, 2)) & " TB"
+    End Select
+    
+    If vNumber = 0 Then retVal = "zero"
+    NumberInKB2 = retVal
 
     
     On Error GoTo 0
