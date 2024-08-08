@@ -77,7 +77,6 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
 	Open File common dialog code without dependent OCX - http://forums.codeguru.com/member.php?92278-rxbagain  
 	VBAdvance  
  
- ![pagefileBalloon](https://github.com/user-attachments/assets/1d05d7ab-655a-478a-b87d-34c7c5f70807)
 
  Tested on :
  
