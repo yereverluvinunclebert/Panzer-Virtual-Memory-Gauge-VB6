@@ -760,7 +760,7 @@ Private Function obtainVirtualMemDetails() As String
     udtMemStatEx.dwLength = Len(udtMemStatEx)
     Call GlobalMemoryStatusEx(udtMemStatEx)
     
-    result = result & "Available Physical Memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailPhys.LoPart, udtMemStatEx.ulAvailPhys.HiPart)) & vbCrLf
+    result = result & "Available (Free) Physical Memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailPhys.LoPart, udtMemStatEx.ulAvailPhys.HiPart)) & vbCrLf
     result = result & "Virtual Memory Total : " & Trim$(VirtualMemory_Usage_Total) & sizString & ", " & vbCrLf
     result = result & "Percentage Usage: " + vbTab + CStr(VirtualMemory_Usage_Percent) & "% utilised." & vbCrLf
     'result = result & "Available virtual memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailVirtual.LoPart, udtMemStatEx.ulAvailVirtual.HiPart)) & vbCrLf
