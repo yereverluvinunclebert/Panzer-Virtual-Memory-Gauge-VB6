@@ -1,4 +1,4 @@
-# Panzer-Virtual Memory-Gauge-VB6
+# Panzer-Virtual Memory-Gauge-VB6 
  
 A FOSS Virtual Memory Gauge VB6 WoW64 Widget for Windows Vista, 7, 8 and 10/11+. There will also be a version for Reactos and XP, watch this space for the link. Also tested and running well on Linux and Mac os/X using Wine.
  
