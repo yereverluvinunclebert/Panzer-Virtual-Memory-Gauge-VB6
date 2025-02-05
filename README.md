@@ -13,6 +13,51 @@
  Functional and gorgeous at the same time. The graphics are my own, I took original inspiration from a clock face by Italo Fortana combining it with an aircraft gauge surround. It is all my code with some help from the chaps at VBForums (credits given). 
   
 The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual Memory usage of your system in a dieselpunk fashion on your desktop. This Widget is a moveable widget that you can move anywhere around the desktop as you require.
+
+The following is the code used to extract the memory information from the running system via the GlobalMemoryStatusEx API. These are the pertinent bits:
+
+    Private Function VirtualMemory_Usage_Percent() As Long
+        Dim udtMemStatEx As MEMORYSTATUSEX
+        Dim physMemFree As Long: physMemFree = 0
+        
+        udtMemStatEx.dwLength = Len(udtMemStatEx)
+        Call GlobalMemoryStatusEx(udtMemStatEx)
+        
+        physMemFree = Round(CLargeInt(udtMemStatEx.ulAvailVirtual.LoPart, udtMemStatEx.ulAvailVirtual.HiPart) / (CLargeInt(udtMemStatEx.ulTotalVirtual.LoPart, udtMemStatEx.ulTotalVirtual.HiPart)) * 100)
+        
+        VirtualMemory_Usage_Percent = 100 - physMemFree
+    End Function
+  
+    Private Function VirtualMemory_Usage_Total() As Double
+      Dim udtMemStatEx As MEMORYSTATUSEX
+      Dim physMem As Long: physMem = 0
+      
+      udtMemStatEx.dwLength = Len(udtMemStatEx)
+      Call GlobalMemoryStatusEx(udtMemStatEx)
+      
+      physMem = NumberInKB(CLargeInt(udtMemStatEx.ulTotalVirtual.LoPart, udtMemStatEx.ulTotalVirtual.HiPart))
+      
+      VirtualMemory_Usage_Total = physMem
+    End Function
+    
+    
+    Private Function obtainVirtualMemDetails() As String
+        Dim result As String: result = vbNullString
+        Dim udtMemStatEx As MEMORYSTATUSEX
+        
+        On Error GoTo obtainVirtualMemDetails_Error
+        
+        udtMemStatEx.dwLength = Len(udtMemStatEx)
+        Call GlobalMemoryStatusEx(udtMemStatEx)
+        
+        result = result & "Available (Free) Physical Memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailPhys.LoPart, udtMemStatEx.ulAvailPhys.HiPart)) & vbCrLf
+        result = result & "Virtual Memory Total : " & Trim$(VirtualMemory_Usage_Total) & sizString & ", " & vbCrLf
+        result = result & "Percentage Usage: " + vbTab + CStr(VirtualMemory_Usage_Percent) & "% utilised." & vbCrLf
+        'result = result & "Available virtual memory: " + vbTab + NumberInKB2(CLargeInt(udtMemStatEx.ulAvailVirtual.LoPart, udtMemStatEx.ulAvailVirtual.HiPart)) & vbCrLf
+        result = result & "Physical Memory Load: " + vbTab + CStr(udtMemStatEx.dwMemoryLoad) + "%" & vbCrLf
+    
+        obtainVirtualMemDetails = result
+    End Function
  
 ![white-on-desktop](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/bc13a457-48e9-42f9-b1fb-fd1bc645a634)
 
