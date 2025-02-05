@@ -35,7 +35,7 @@ The following is the code used to extract the memory information from the runnin
        ulAvailExtendedVirtual As INT64
     End Type
     
-   Private Function VirtualMemory_Usage_Percent() As Long
+    Private Function VirtualMemory_Usage_Percent() As Long
         Dim udtMemStatEx As MEMORYSTATUSEX
         Dim physMemFree As Long: physMemFree = 0
         
