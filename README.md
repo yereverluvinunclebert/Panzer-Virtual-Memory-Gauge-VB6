@@ -78,6 +78,8 @@ The following is the code used to extract the memory information from the runnin
         obtainVirtualMemDetails = result
     End Function
  
+There are some other bits of code used for formatting the results that you will need. Just dig into the code of this desktop gauge to find the above and it will become apparent which other bits you require.
+
 ![white-on-desktop](https://github.com/yereverluvinunclebert/Panzer-Virtual-Memory-Gauge-VB6/assets/2788342/bc13a457-48e9-42f9-b1fb-fd1bc645a634)
 
  This widget can be increased in size, animation speed can be changed, 
