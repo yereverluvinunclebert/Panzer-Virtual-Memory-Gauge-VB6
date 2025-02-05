@@ -185,8 +185,12 @@ There are some other bits of code used for formatting the results that you will 
  
  Harry Whitfield for his quality testing, brain stimulation and being an 
  unwitting source of inspiration. 
+
+ Hypetia for her physMem code - https://www.tek-tips.com/userinfo.cfm?member=Hypetia
+
+ Khodor for the RAM numbers conversion code https://stackoverflow.com/users/164214/khodor
  
- Dependencies:
+ ** Dependencies: **
  
  o A windows-alike o/s such as Windows XP, 7-11 or Apple Mac OSX 11. 
  
