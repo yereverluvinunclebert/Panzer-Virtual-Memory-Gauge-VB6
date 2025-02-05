@@ -16,7 +16,26 @@ The Panzer Virtual Memory Gauge VB6  is a useful utility displaying the Virtual 
 
 The following is the code used to extract the memory information from the running system via the GlobalMemoryStatusEx API. These are the pertinent bits:
 
-    Private Function VirtualMemory_Usage_Percent() As Long
+     Private Declare Sub GlobalMemoryStatusEx Lib "kernel32" (lpBuffer As MEMORYSTATUSEX)
+    
+    Private Type INT64
+       LoPart As Long
+       HiPart As Long
+    End Type
+    
+    Private Type MEMORYSTATUSEX
+       dwLength As Long
+       dwMemoryLoad As Long
+       ulTotalPhys As INT64
+       ulAvailPhys As INT64
+       ulTotalPageFile As INT64
+       ulAvailPageFile As INT64
+       ulTotalVirtual As INT64
+       ulAvailVirtual As INT64
+       ulAvailExtendedVirtual As INT64
+    End Type
+    
+   Private Function VirtualMemory_Usage_Percent() As Long
         Dim udtMemStatEx As MEMORYSTATUSEX
         Dim physMemFree As Long: physMemFree = 0
         
