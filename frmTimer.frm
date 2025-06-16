@@ -112,8 +112,8 @@ Private Sub revealWidgetTimer_Timer()
 
         fAlpha.gaugeForm.Visible = True
         revealWidgetTimer.Enabled = False
-        PzGWidgetHidden = "0"
-        sPutINISetting "Software\PzVirtualMemoryGauge", "widgetHidden", PzGWidgetHidden, PzGSettingsFile
+        gblWidgetHidden = "0"
+        sPutINISetting "Software\PzVirtualMemoryGauge", "widgetHidden", gblWidgetHidden, gblSettingsFile
     End If
 
     On Error GoTo 0
@@ -179,12 +179,12 @@ Private Sub settingsTimer_Timer()
     
     On Error GoTo settingsTimer_Timer_Error
 
-    PzGUnhide = fGetINISetting("Software\PzVirtualMemoryGauge", "unhide", PzGSettingsFile)
+    gblUnhide = fGetINISetting("Software\PzVirtualMemoryGauge", "unhide", gblSettingsFile)
 
-    If PzGUnhide = "true" Then
+    If gblUnhide = "true" Then
         'overlayWidget.Hidden = False
         fAlpha.gaugeForm.Visible = True
-        sPutINISetting "Software\PzVirtualMemoryGauge", "unhide", vbNullString, PzGSettingsFile
+        sPutINISetting "Software\PzVirtualMemoryGauge", "unhide", vbNullString, gblSettingsFile
     End If
 
     On Error GoTo 0
