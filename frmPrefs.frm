@@ -4005,7 +4005,7 @@ Private Sub btnSave_Click()
      
             
     If gblStartup = "1" Then
-        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "PanzerVirtual MemoryGauge", """" & App.Path & "\" & "Panzer-Virtual-Memory-Gauge-VB6.exe""")
+        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "PanzerVirtualMemoryGauge", """" & App.Path & "\" & "Panzer-Virtual-Memory-Gauge-VB6.exe""")
     Else
         Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "PanzerVirtualMemoryGauge", vbNullString)
     End If
