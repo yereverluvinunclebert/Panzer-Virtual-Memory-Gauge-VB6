@@ -2243,7 +2243,7 @@ Public Sub readPrefsPosition()
     gblPrefsSecondaryHeightTwips = fGetINISetting("Software\PzVirtualMemoryGauge", "prefsSecondaryHeightTwips", gblSettingsFile)
         
    ' on very first install this will be zero, then size of the prefs as a proportion of the screen size
-    If gblPrefsPrimaryHeightTwips = "" Then gblPrefsPrimaryHeightTwips = CStr(1000 * gblScreenTwipsPerPixelY)
+    If gblPrefsPrimaryHeightTwips = "" Then gblPrefsPrimaryHeightTwips = Screen.Height / 3
     
     
    On Error GoTo 0
@@ -2472,7 +2472,7 @@ Public Sub hardRestart()
     If fFExists(thisCommand) Then
         
         ' run the selected program
-        Call ShellExecute(widgetPrefs.hWnd, "open", thisCommand, "Panzer-Virtual-Memory-Gauge-VB6.exe prefs", "", 1)
+        Call ShellExecute(widgetPrefs.hWnd, "open", thisCommand, "Panzer-Virtual-Memory-Gauge.exe prefs", "", 1)
     Else
         'answer = MsgBox(thisCommand & " is missing", vbOKOnly + vbExclamation)
         answerMsg = thisCommand & " is missing"
